@@ -29,4 +29,4 @@ ENTRYPOINT ["/usr/bin/dumb-init", "--rewrite", "15:2",  "--"]
 
 # Launch
 RUN chmod 700 startup_commands.sh
-CMD ["./startup_commands.sh"]
+CMD ["bash", "./startup_commands.sh"]
